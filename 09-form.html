@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单</title>
+</head>
+<body>
+        <!-- 表单
+        action：提交的网址 默认是当前的网址； 自定义
+        method: 默认：get / post
+
+        -->
+
+        <form action="" method="post">
+
+            <p>
+
+                <!-- 1.用户名 -->
+                <label for="">用户名：</label>
+                <input id="xx" type="text" placeholder="请输入" name="username">
+            </p>
+
+            <p>
+
+                <!-- 2.密码 -->
+                <label for="">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+                <input type="password" name="pwd">
+
+            </p>
+
+             <p>
+
+                <!-- 3.性别 -->
+                <label for="">性&nbsp;&nbsp;&nbsp;&nbsp;别：</label>
+                <input type="radio" name="sex" value="0">男
+                <input type="radio" name="sex" value="1">女
+                
+            </p>
+
+
+
+             <p>
+
+                <!-- 4.爱好 -->
+                <label for="">爱&nbsp;&nbsp;&nbsp;&nbsp;好：</label>
+                <input type="checkbox" name="like" value="0">妹子
+                <input type="checkbox" name="like" value="1">汉子
+                <input type="checkbox" name="like" value="2">健身
+                <input type="checkbox" name="like" value="3">游泳
+                
+            </p>
+
+
+            <p>
+
+                <!-- 5.上传文件 -->
+                <label for="">玉&nbsp;&nbsp;&nbsp;&nbsp;照：</label>
+                <input type="file" name="file">
+                   
+            </p>
+
+            <p>
+
+                <!-- 6.下拉列表 -->
+                <label for="">籍&nbsp;&nbsp;&nbsp;&nbsp;贯：</label>
+                <select name="address" id="">
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                    <option value="2">广东</option>
+                    <option value="3" selected="selected">深圳</option>
+                    
+                </select>
+                   
+            </p>
+
+            <p>
+
+                <!-- 7.文本域 -->
+                <label for="">个人描述：</label>
+                <textarea name="info" id="" cols="30" rows="10"></textarea>
+                   
+            </p>
+
+
+            <p>
+                <!-- 8.注册 -->
+                <input type="submit" value="注册">
+                <!-- 9.重置 -->
+                <input type="reset">
+                <!-- 10.隐藏域 -->
+                <input type="hidden" name="isVIP" value="yes">
+                <!-- 11.普通按钮 -->
+                <input type="button" value="普通按钮">
+                
+            </p>
+
+        </form>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            /* 1.将块元素 转换成 行内块元素 */
+            display: inline;
+
+            /* 2.块元素 转换成行内块元素 */
+            display: inline-block;
+
+
+        }
+
+
+        .box{
+
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box1{
+
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        a{
+            background-color: red;
+
+            /* 1.行内转换 块元素 */
+            display: block;
+            width: 200px;
+            height: 200px;
+
+            /* 2.行内 转换 行内快元素  */
+            display: inline-block;
+
+            /* 3.元素隐藏属性 不占位置 */
+            display: none;
+
+
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <!-- <div class="box">块元素</div>
+    <div class="box1">块元素</div> -->
+
+    <a href="">行内块元素</a>
+    
+    <a href="">行内块元素</a>
+
+    <span>span</span>
+    
+</body>
+</html>

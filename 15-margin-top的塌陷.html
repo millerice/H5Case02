@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+
+            width: 400px;
+            height: 400px;
+            background-color: red;
+
+             /* 解决margin-top塌陷问题 */
+            /* 1.设置border padding */
+            /* border: 1px solid green; */
+            /* padding: 1px; */
+
+            /* 2.设置overflow */
+            overflow: hidden;
+        }
+
+
+        /* 3.通过伪类 
+             实际开发使用
+        */
+        .clearfix:before{
+
+            content: "";
+            display: table;
+        }
+    
+
+        .box1{
+
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 50px;
+
+           
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="box1"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="CSS\17-div.css"> -->
+
+    <style>
+        
+        /* 块元素的特点
+        1.默认宽度 父元素的百分百；一致
+        2.霸占一行
+        3.支持全部样式
+
+        */
+
+
+
+
+        
+        .box{
+            width: 100px;
+            height: 50px; 
+            background-color: red;
+
+
+
+        }
+
+
+        span{
+
+            /* 1.行内元素排列一行，遇到边界 会自动换行 */
+
+            background-color: red;
+
+            /* 2.宽高有内容决定  不支持宽高 不支持margin上下 */
+            width: 200px;
+            height: 200px;
+            margin: 100px 20px;
+            /* 3.padding上下有问题 */
+            /* padding: 50px 20px; */
+
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="box"></div>
+    <p>段落</p>
+    <h1>标题标签</h1>
+    <!-- ol>li{有序$}*5 -->
+    <ol>
+        <li>有序1</li>
+        <li>有序2</li>
+        <li>有序3</li>
+        <li>有序4</li>
+        <li>有序5</li>
+    </ol>  
+
+    <!-- ul>li{无序$}*3 -->
+    <ul>
+        <li>无序1</li>
+        <li>无序2</li>
+        <li>无序3</li>
+    </ul>
+
+    <!-- dl>dd{定义列表}*3 -->
+    <dl>
+        <dt>title</dt>
+        <dd>定义列表</dd>
+        <dd>定义列表</dd>
+        <dd>定义列表</dd>
+    </dl>
+
+    <form action="">
+
+        <label for="">标注</label>
+        <input type="text" name="" id="">
+
+
+    </form>
+
+    <span>行内元素</span>
+    <span>行内元素</span>
+    
+    
+
+</body>
+</html>
