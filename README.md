@@ -1,2 +1,1 @@
-# 01_html_base
-this is about html base code
+html5的实用案例2，取之即用！
